@@ -1,0 +1,501 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+span{
+    color: #08d665;
+}
+section{
+    padding: 100px 0;
+}
+.contanier{
+    width: 85%;
+    margin: auto;
+}
+.top-sec{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.top-sec h2{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.top-sec p{
+    color: #c8c6c6;
+}
+.btn{
+    padding: 14px 37px;
+    background-color: #08d665;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #08d665;
+}
+.btn:Hover{
+    background: transparent;
+}
+
+
+
+
+
+
+/* start header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #1f1f1f93;
+    z-index: 100;
+}
+header.active{
+    background-color: #0a0a0a;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 80px;
+}
+header nav .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+}
+header nav .links{
+    display: flex;
+}
+header nav .links a{
+    color: #c8c6c6;
+    font-size: 17px;
+}
+header nav .links li{
+    position: relative;
+    margin: 0 25px;
+    height: 80px;
+    line-height: 80px;
+}
+header nav .links li::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #08d665;
+    transition: 0.3s;
+}
+header nav .links li:hover::after,
+header nav .links li.active::after{
+    width: 100%;
+}
+header nav .social-links a i{
+    color: #08d665;
+    font-size: 24px;
+    margin-left: 15px;
+}
+header nav .social-links a i:hover{
+    color: #fff;
+}
+
+/* satart hero */
+.hero-sec{
+    background: url(../images/wlc-bg1.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-sec .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+/* Start Home -section */
+
+.hero-sec .contanier .div-text{
+    width: 50%;
+}
+.hero-sec .contanier .div-text h4{
+    color: #c8c6c6;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.hero-sec .contanier .div-text h1{
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.hero-sec .contanier .div-text span{
+    font-size: 40px;
+}
+.hero-sec .contanier .div-text p{
+    color: #c8c6c6;
+    font-size: 18px;
+    margin: 10px 0 50px;
+    line-height: 1.5;
+}
+
+.hero-sec .contanier .div-img{
+    width: 35%;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+}
+.hero-sec .contanier .div-img img{
+    width: 100%;
+}
+
+/* start about section */
+.about{
+    background-color: #0B0D0E;
+}
+.about .contanier{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.about .contanier .about-img{
+    width: 35%;
+    position: relative;
+    z-index: 10;
+}
+.about .contanier .about-img::after{
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: url(../images/about-after.svg);
+    position: absolute;
+    bottom: -15%;
+    left: -10%;
+    z-index: -1;
+}
+.about .contanier .about-img .img{
+
+    background: url(../IMG_9693.webp);
+    height: 480px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.about .contanier .text-about{
+    width: 55%;
+}
+.about .contanier .text-about h2{
+    font-size: 45px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.about .contanier .text-about p{
+    color: #c8c6c6;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+/* start Skills section */
+
+.skills{
+    background-color: #0a0a0a;
+}
+.skills .all-skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills .all-skills .progras{
+    width: 40%;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.skills .all-skills .progras .cont-prog{
+    display: flex;
+    justify-content: space-between;
+}
+.skills .all-skills .progras .my-progras{
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.skills .all-skills .progras .my-progras span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #08d665;
+}
+
+/* start projects section */
+
+.porjects{
+    background-color: #0B0D0E;
+}
+.porjects .boxs{
+    display: flex;
+    justify-content: space-between;
+}
+.porjects .boxs .box{
+    width: 31%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.porjects .boxs .box img{
+    width: 100%;
+}
+.porjects .boxs .box .hover-project{
+position: absolute;
+bottom: -100%;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(#08d66515, #08d665);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.porjects .boxs .box .hover-project p{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.porjects .boxs .box .hover-project a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.porjects .boxs .box:hover .hover-project{
+    bottom: 0;
+}
+
+/* start contact section */
+
+.contact{
+    background-color: #0a0a0a;
+}
+.contact .contanier{
+    display: flex;
+    justify-content: space-between;
+}
+.contact .soial-contact{
+    width: 30%;
+}
+.contact .soial-contact h2{
+    color: #fff;
+    margin-bottom: 40px;
+}
+.contact .soial-contact .links{
+    display: flex;
+    flex-direction: column;
+}
+.contact .soial-contact .links a{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.contact .soial-contact .links a i{
+    color: #08d665;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #08d665;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+.contact form{
+    width: 65%;
+    text-align: center
+}
+.contact .inpts-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact .inpts-form input,
+.contact .inpts-form textarea{
+    width: 48%;
+    border-radius: 5px;
+    padding: 20px;
+    outline: none;
+    background-color: #141614;
+    color: #fff;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid transparent;
+}
+.contact .inpts-form textarea{
+    width: 100%;
+}
+.contact .inpts-form input:focus,
+.contact .inpts-form textarea:focus{
+    border: 1px solid #08d665;
+}
+
+/* start footer */
+
+footer{
+    background-color: #000;
+    text-align: center;
+    padding: 50px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 18px;
+}
+
+
+#btn-menu{
+    display: none;
+}
+
+@media(max-width: 990px){
+    #btn-menu{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+    header nav .links{
+        position: absolute;
+        top: 100%;
+        right: -420px;
+        flex-direction: column;
+        background-color: #000;
+        border-left: 1px solid #444444a8;
+        width: 400px;
+        height: 100vh;
+        text-align: center;
+        padding: 20px 0;
+    }
+    header nav .links.active{
+        right: 0;
+    }
+    header nav .social-links{
+        display: none;
+    }
+    
+    .hero-sec .contanier .div-img{
+        width: 50%;
+    }   
+    .hero-sec .contanier .div-text h1{
+        font-size: 50px;
+    }
+    .hero-sec .contanier .div-text p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 780px){
+    .hero-sec {
+        height: auto;
+    }
+    .hero-sec .contanier{
+        flex-direction: column;
+    }
+    .hero-sec .contanier .div-text{
+        width: 80%;
+        margin-top: 150px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .hero-sec .contanier .div-img{
+        position: relative;
+        width: 70%;
+    }
+    .about .contanier{
+        flex-direction: column-reverse;
+    }
+    .about .contanier .text-about{
+        width: 80%;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .about .contanier .about-img{
+        width: 60%;
+    }
+    .porjects .boxs{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    .porjects .boxs .box{
+        width: 45%;
+    }
+
+  
+}
+
+@media(max-width: 480px){
+    .hero-sec .contanier .div-text h1{
+        font-size: 35px;
+    }
+    .about .contanier .text-about{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .about .contanier .about-img {
+        width: 90%;
+    }
+    .about .contanier .about-img .img{
+        height: 300px;
+    }
+    .top-sec h2{
+        font-size: 40px;
+    }
+    .top-sec p{
+        width: 80%;
+        margin: auto;
+    }
+    .skills .all-skills .progras{
+        width: 100%;
+    }
+    .porjects .boxs{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    .porjects .boxs .box{
+        width: 80%;
+    }
+    .contact .contanier{
+        flex-direction: column-reverse;
+    }
+    .contact .soial-contact{
+        width: 100%;
+    }
+    .contact form{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact .soial-contact .links{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact .soial-contact .links a{
+        width: 50%;
+        font-size: 18px;
+    }
+}
